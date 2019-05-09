@@ -21,13 +21,12 @@
 
 #### Check Null Sessions 
 
-```
-smbmap -H [ip/hostname]
+`smbmap -H [ip/hostname]`
     
-rpcclient -U "" -N [ip]
+`rpcclient -U "" -N [ip]`
     
-smbclient \\\\[ip]\\[share name]
-```
+`smbclient \\\\[ip]\\[share name]`
+
 
 
 
