@@ -40,13 +40,14 @@
 
 ## Tools
 
+```
 **nmblookup** - collects NetBIOS over TCP/IP client used to lookup NetBIOS names.
 **smbclient** - an ftp-like client to access SMB shares
 **nmap** - general scanner, with scripts
 **rpcclient** - tool to execute client side MS-RPC functions
 **enum4linux** - enumerates various smb functions
 **wireshark**
-
+```
 
 
 Source: https://0xdf.gitlab.io/2018/12/02/pwk-notes-smb-enumeration-checklist-update1.html
