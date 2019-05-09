@@ -13,7 +13,9 @@
 #### List Shares
 
 `smbmap -H [ip/hostname]`
+
 `echo exit | smbclient -L \\\\[ip]`
+
 `nmap --script smb-enum-shares -p 139,445 [ip]`
 
 
