@@ -4,14 +4,17 @@
   - [Enumerate Hostname](#enumerate-hostname)
   - [List Shares](#list-shares)
   - [Check Null Sessions](#check-null-sessions)
+  - [Check for Vulnerabilities](#check-for-vulnerabilities)
+  - [Overall Scan](#overall-scan)
+- [Tools](#tools)
 
-### Checklist
+## Checklist
 
-#### Enumerate Hostname
+### Enumerate Hostname
 
 `nmblookup -A [ip]`
 
-#### List Shares
+### List Shares
 
 `smbmap -H [ip/hostname]`
 
@@ -19,7 +22,7 @@
 
 `nmap --script smb-enum-shares -p 139,445 [ip]`
 
-#### Check Null Sessions 
+### Check Null Sessions 
 
 `smbmap -H [ip/hostname]`
     
@@ -27,6 +30,15 @@
     
 `smbclient \\\\[ip]\\[share name]`
 
+### Check for Vulnerabilities
+
+`nmap --script smb-vuln* -p 139,445 [ip]`
+
+### Overall Scan
+
+`enum4linux -a [ip]`
+
+## Tools
 
 
 
